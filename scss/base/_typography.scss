@@ -1,0 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $titleFont;
+  line-height: $baseLineHeight;
+}
+
+h1 {
+  font-size: toRem(64);
+}
+h2 {
+  font-size: toRem(62);
+}
+h3 {
+  font-size: toRem(56);
+}
+h4 {
+  font-size: toRem(48);
+}
+h5 {
+  font-size: toRem(28);
+}
