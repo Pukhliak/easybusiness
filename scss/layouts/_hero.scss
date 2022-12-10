@@ -1,0 +1,72 @@
+.hero {
+  padding-top: $padding200;
+  padding-bottom: $padding100;
+  background-image: url("/images/hero_left.svg");
+  background-position-x: left;
+  background-position-y: 640%;
+  background-repeat: no-repeat;
+
+  &__images {
+    display: flex;
+    align-items: flex-start;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    span {
+      padding: 0 toRem(20);
+      font-size: x-large;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: flex-end;
+
+      &--easy {
+        width: toRem(690);
+        min-width: toRem(345);
+      }
+
+      &--iiko {
+        width: toRem(150);
+        min-width: toRem(75);
+      }
+    }
+
+    &__rocket {
+      padding-right: 15px;
+
+      img {
+        transform: translate(40%, -25%);
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: toRem(20);
+    justify-content: flex-end;
+
+    a {
+      padding: toRem(8) toRem(32) toRem(24);
+      background: $colorBlack;
+      color: $colorWhite;
+      font-size: toRem(24);
+      transition: all 0.3s ease;
+
+      &:first-child {
+        border-radius: 10px 10px 10px 0px;
+      }
+
+      &:last-child {
+        border-radius: 10px 10px 0px;
+      }
+
+      &:hover {
+        background: $colorGray;
+      }
+    }
+  }
+}

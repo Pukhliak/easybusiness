@@ -1,6 +1,7 @@
 .container {
   display: block;
+  width: 100%;
+  max-width: toRem(1192);
   margin: 0 auto;
-  padding: 0 16px;
-  max-width: 1160px;
+  padding: 0 toRem(16);
 }

@@ -3,8 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-feature-settings: "liga" off;
 
   * {
     box-sizing: inherit;
   }
+}
+
+a {
+  text-decoration: none;
 }
