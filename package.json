@@ -1,0 +1,32 @@
+{
+  "name": "easy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss/styles.scss css/styles.css",
+    "scss:watch": "node-sass -w scss/styles.scss css/styles.css",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "imagemin": "imagemin src/images/* --out-dir=/images",
+    "build": "npm run scss && npm run autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pukhliak/easybusiness.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pukhliak/easybusiness/issues"
+  },
+  "homepage": "https://github.com/Pukhliak/easybusiness#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "imagemin-cli": "^7.0.0",
+    "node-sass": "^8.0.0",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.19"
+  }
+}
