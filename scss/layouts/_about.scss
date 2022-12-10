@@ -1,0 +1,27 @@
+.about {
+  padding-top: $padding100;
+  padding-bottom: $padding100;
+
+  &__title {
+    padding-bottom: $padding100;
+
+    h1 {
+      margin: 0 0 toRem(76) 0;
+    }
+
+    p {
+      font-family: "Montserrat-400";
+      font-size: toRem(30);
+    }
+
+    span {
+      font-family: "Montserrat-700";
+      font-size: toRem(30);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

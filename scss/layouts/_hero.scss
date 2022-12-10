@@ -54,7 +54,7 @@
       background: $colorBlack;
       color: $colorWhite;
       font-size: toRem(24);
-      transition: all 0.3s ease;
+      transition: background 0.3s ease;
 
       &:first-child {
         border-radius: 10px 10px 10px 0px;
