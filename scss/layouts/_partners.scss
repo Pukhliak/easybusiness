@@ -1,0 +1,49 @@
+.partners {
+  padding-top: $padding100;
+  padding-bottom: $padding100;
+
+  &__title {
+    display: flex;
+    gap: toRem(22);
+    margin-bottom: toRem(50);
+
+    h3 {
+      transform: translateY(-30%);
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: toRem(48);
+    padding: toRem(86);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+    position: relative;
+    box-sizing: border-box;
+
+    background: $colorWhite;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-radius: toRem(20);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: toRem(-10);
+      border-radius: inherit;
+      background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff);
+    }
+  }
+}

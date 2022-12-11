@@ -21,9 +21,10 @@
       position: relative;
       width: calc(33% - 26px);
       background: #101010;
-      border-radius: toRem(16);
       padding: toRem(10) toRem(20);
       max-height: toRem(240);
+      border-image: url("/images/gradient-border.svg") 75 fill/36px/1px stretch;
+      border-radius: toRem(16);
 
       &:last-child {
         p {
