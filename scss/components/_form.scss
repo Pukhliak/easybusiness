@@ -1,0 +1,40 @@
+.feedback {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: toRem(26);
+    flex: 1 0 60%;
+
+    button {
+      background: $colorWhite;
+      border-radius: toRem(8) 0px toRem(8) toRem(8);
+      color: $colorBlack;
+      font-family: "Greenth-Regular";
+      font-size: toRem(18);
+      line-height: 1.3;
+      padding: toRem(6) toRem(18) toRem(15);
+    }
+
+    &__item {
+      width: 80%;
+      border-radius: toRem(8) toRem(8) 0px toRem(8);
+      input {
+        border: none;
+        background-color: $colorInput;
+        color: $colorWhite;
+        border-radius: toRem(8) toRem(8) 0px toRem(8);
+        padding: toRem(16);
+        width: 100%;
+        outline: 0;
+        font-family: "Montserrat-300";
+        font-size: toRem(18);
+
+        &::placeholder {
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.feedback {
+  margin-top: $padding100;
+  margin-bottom: $padding100;
+
+  &__title {
+    text-align: center;
+    margin-bottom: toRem(80);
+  }
+
+  &__form {
+    &__title {
+      display: flex;
+      gap: toRem(260);
+      flex-direction: column;
+      flex: 1 0 40%;
+
+      h3 {
+        color: $colorWhite;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      position: relative;
+      box-sizing: border-box;
+      padding: toRem(46);
+      background: $colorBlack;
+      background-clip: padding-box;
+      border: solid 5px transparent;
+      border-radius: toRem(20);
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: toRem(-10);
+        border-radius: inherit;
+        background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff);
+      }
+    }
+  }
+}
