@@ -1,6 +1,19 @@
 .feedback {
-  margin-top: $padding100;
-  margin-bottom: $padding100;
+  padding-top: $padding50;
+  padding-bottom: $padding100;
+  position: relative;
+
+  > img {
+    &:first-of-type {
+      position: absolute;
+      top: -40%;
+    }
+    &:last-of-type {
+      position: absolute;
+      right: 0;
+      top: -22%;
+    }
+  }
 
   &__title {
     text-align: center;
@@ -30,6 +43,7 @@
       background-clip: padding-box;
       border: solid 5px transparent;
       border-radius: toRem(20);
+      margin: 0 toRem(100);
 
       &:before {
         content: "";

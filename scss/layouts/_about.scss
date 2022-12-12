@@ -1,6 +1,15 @@
 .about {
   padding-top: $padding100;
   padding-bottom: $padding100;
+  position: relative;
+
+  > img {
+    &:first-of-type {
+      position: absolute;
+      right: 0;
+      top: 30%;
+    }
+  }
 
   &__title {
     padding-bottom: $padding100;

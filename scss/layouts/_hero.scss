@@ -3,6 +3,13 @@
   padding-bottom: $padding100;
   position: relative;
 
+  > img {
+    &:first-of-type {
+      position: absolute;
+      top: 40%;
+    }
+  }
+
   &__images {
     display: flex;
     align-items: flex-start;

@@ -14,9 +14,21 @@
       <div class="container">
         <div class="header__wrapper">
           <div class="header__logo">
-            <img src="./images/header_logo.svg" alt="header logo" />
+            <a href="#hero"
+              ><img src="./images/header_logo.svg" alt="header logo"
+            /></a>
           </div>
+
           <nav class="header__nav">
+            <ul>
+              <li><a href="#about">о компании</a></li>
+              <li><a href="#work">услуги</a></li>
+              <li><a href="#partners">партнеры</a></li>
+              <li><a href="#feedback">обратная связь</a></li>
+            </ul>
+          </nav>
+
+          <!-- <nav class="header__nav">
             <ul>
               <li><a href="">аналитика</a></li>
               <li><a href="">Финансы</a></li>
@@ -28,12 +40,13 @@
           </nav>
           <div class="header__contacts">
             <a href="">Контакты</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
     <main id="main">
-      <section class="hero">
+      <section class="hero" id="hero">
+        <img src="./images/hero_left.svg" alt="" />
         <div class="container">
           <div class="hero__images">
             <div class="hero__images__logo">
@@ -59,7 +72,8 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
+        <img src="./images/about-decor.svg" alt="" />
         <div class="container">
           <div class="about__title">
             <h1>о компании</h1>
@@ -82,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div class="container">
           <div class="work__title">
             <img src="./images/easy-ellipse.svg" alt="ellipse logo easy" />
@@ -152,7 +166,7 @@
           </div>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners" id="partners">
         <div class="container">
           <div class="partners__title">
             <img src="./images/partners-logo.svg" alt="Easy Business logo" />
@@ -213,7 +227,17 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
+        <img
+          class="feedback__decor"
+          src="./images/feedback-decor-left.svg"
+          alt=""
+        />
+        <img
+          class="feedback__decor"
+          src="./images/feedback-decor-right.svg"
+          alt=""
+        />
         <div class="container">
           <div class="feedback__title">
             <h2>оставь свою заявку</h2>
