@@ -23,7 +23,8 @@
       background: #101010;
       padding: toRem(10) toRem(20);
       max-height: toRem(240);
-      border-image: url("/images/gradient-border.svg") 75 fill/36px/1px stretch;
+      border-image: url("../images/gradient-border.svg") 75 fill/36px/1px
+        stretch;
       border-radius: toRem(16);
 
       &:last-child {

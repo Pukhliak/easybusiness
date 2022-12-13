@@ -223,7 +223,7 @@ h5 {
       background: #101010;
       padding: 0.625rem 1.25rem;
       max-height: 15rem;
-      border-image: url("/images/gradient-border.svg") 75 fill/36px/1px stretch;
+      border-image: url("../images/gradient-border.svg") 75 fill/36px/1px stretch;
       border-radius: 1rem; }
       .work__items__card:last-child p {
         margin-right: 4.125rem; }
