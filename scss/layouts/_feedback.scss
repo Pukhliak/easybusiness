@@ -38,7 +38,7 @@
       justify-content: space-between;
       position: relative;
       box-sizing: border-box;
-      padding: toRem(46);
+      padding: toRem(22) toRem(46) toRem(46);
       background: $colorBlack;
       background-clip: padding-box;
       border: solid 5px transparent;

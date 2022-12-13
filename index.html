@@ -22,7 +22,7 @@
           <nav class="header__nav">
             <ul>
               <li><a href="#about">о компании</a></li>
-              <li><a href="#work">услуги</a></li>
+              <li><a href="#services">услуги</a></li>
               <li><a href="#partners">партнеры</a></li>
               <li><a href="#feedback">обратная связь</a></li>
             </ul>
@@ -47,6 +47,11 @@
     <main id="main">
       <section class="hero" id="hero">
         <img src="./images/hero_left.svg" alt="" />
+        <div class="to-up">
+          <a href="#header"
+            ><img src="./images/arrow_up.svg" alt="Click to top"
+          /></a>
+        </div>
         <div class="container">
           <div class="hero__images">
             <div class="hero__images__logo">
@@ -55,26 +60,24 @@
                 src="./images/hero_logo.svg"
                 alt="Easy Business Logo"
               />
-              <span>&#10005;</span>
+              <!-- <span>&#10005;</span> -->
+              <img
+                class="hero__images__logo--3dx"
+                src="./images/X-logo-3d-v2.png"
+                alt=""
+              />
               <img
                 class="hero__images__logo--iiko"
                 src="./images/iiko.svg"
                 alt="iiko logo"
               />
             </div>
-            <div class="hero__images__rocket">
-              <img src="./images/rocket.png" alt="Cosmic rocket" />
-            </div>
-          </div>
-          <div class="hero__buttons">
-            <a href="">о компании</a>
-            <a href="">оставить заявку</a>
           </div>
         </div>
       </section>
-      <section class="about" id="about">
+      <section class="about">
         <img src="./images/about-decor.svg" alt="" />
-        <div class="container">
+        <div class="container" id="about">
           <div class="about__title">
             <h1>о компании</h1>
             <p>
@@ -166,8 +169,104 @@
           </div>
         </div>
       </section>
-      <section class="partners" id="partners">
-        <div class="container">
+      <section class="services">
+        <div class="container" id="services">
+          <div class="services__title">
+            <img src="./images/easy-ellipse.svg" alt="ellipse logo easy" />
+            <h4>чем мы занимаемся?</h4>
+          </div>
+          <div class="services__items">
+            <div class="services__items__card">
+              <div>
+                <h5>аналитика</h5>
+                <img src="./images/analysis-icon-3d.png" alt="analytics logo" />
+              </div>
+              <div>
+                <p>
+                  Подведение финансовых итогов отчётного периода (P&L).
+                  Предоставление любой аналитики согласно специфике бизнеса.
+                  Анализ данных и рекомендации эффективных инструментов
+                  для улучшения бизнес-показателей
+                </p>
+              </div>
+            </div>
+            <div class="services__items__card">
+              <div>
+                <h5>финансы</h5>
+                <img src="./images/finance-icon-3d.png" alt="finance logo" />
+              </div>
+              <div>
+                <p>
+                  Планирование платёжного календаря (Cash Flow). Избежание
+                  кассовых разрывов. Оптимальное распределение денежных средств
+                  и рациональный вывод чистой прибыли
+                </p>
+              </div>
+            </div>
+            <div class="services__items__card">
+              <div>
+                <h5>Товарно-складской учёт</h5>
+                <img
+                  src="./images/accounting-logo-3d.png"
+                  alt="accounting logo"
+                />
+              </div>
+              <div>
+                <p>
+                  Обеспечение пути движения товара в учётной системе: от заказа
+                  до реализации. Контроль себестоимости. Прозрачность учёта:
+                  от корректных технологических карт до понятных результатов
+                  инвентаризации
+                </p>
+              </div>
+            </div>
+            <div class="services__items__card">
+              <div>
+                <h5>Telegram Бот</h5>
+                <img src="./images/telegram-icon-3d.png" alt="telegram logo" />
+              </div>
+              <div>
+                <p>
+                  Создание и настройка бота для оптимизации операционных
+                  процессов бизнеса. Синхронизация Telegram с Яндекс и Google
+                  дисками, Google таблицами и прочими сторонними ресурсами
+                </p>
+              </div>
+            </div>
+            <div class="services__items__card">
+              <div>
+                <h5>Работа с поставщиками</h5>
+                <img src="./images/partners-logo-3d.png" alt="partners logo" />
+              </div>
+              <div>
+                <p>
+                  Формирование товарной матрицы и подбор контрагентов с лучшими
+                  условиями на рынке. Мониторинг цен и анализ конкурентов
+                </p>
+              </div>
+            </div>
+            <div class="services__items__card">
+              <div>
+                <h5>Развитие агрегаторов</h5>
+                <img src="./images/yandex-logo.png" alt="yandex eat logo" />
+              </div>
+              <div>
+                <p>
+                  Запуск под ключ и полноценное ведение агрегаторов доставки.
+                  Корректность данных, маркетинговые активности, увеличение
+                  прибыли. Экспертный анализ конкурентов и формирование условий
+                  и зон доставки
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services__bottomLine">
+            <img src="./images/bottom-line.svg" alt="bottom line" />
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container" id="partners">
           <div class="partners__title">
             <img src="./images/partners-logo.svg" alt="Easy Business logo" />
             <img src="./images/X-logo.svg" alt="" />
@@ -176,58 +275,77 @@
           <div class="partners__wrapper">
             <div class="partners__items">
               <div class="partners__items__card">
-                <img
-                  src="./images/meat_coin-logo.png"
-                  alt="Meat Coin Cafe Logo"
-                />
+                <a href="https://meat-coin.com/" target="_blank">
+                  <img
+                    src="./images/meat_coin-logo.png"
+                    alt="Meat Coin Cafe Logo"
+                  />
+                </a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/one_special-logo.png"
-                  alt="one special cafe logo"
-                />
+                <a
+                  href="https://www.instagram.com/onespecialcoffee/"
+                  target="_blank"
+                  ><img
+                    src="./images/one_special-logo.png"
+                    alt="one special cafe logo"
+                /></a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/indian_point-logo.png"
-                  alt="indian point cafe logo"
-                />
+                <a href="https://indian-food.ru/" target="_blank">
+                  <img
+                    src="./images/indian_point-logo.png"
+                    alt="indian point cafe logo"
+                  />
+                </a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/winter_graden-logo.png"
-                  alt="winter graden cafe logo"
-                />
+                <a
+                  href="https://hotel-goldenring.ru/restaurants/#wintergarden"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/winter_graden-logo.png"
+                    alt="winter graden cafe logo"
+                  />
+                </a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/city_food-logo.png"
-                  alt="city food cafe logo"
-                />
+                <a href="https://www.edagoroda.kz/" target="_blank"
+                  ><img
+                    src="./images/city_food-logo.png"
+                    alt="city food cafe logo"
+                /></a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/ppsh_rest-logo.png"
-                  alt="ppsh restourant logo"
-                />
+                <a href="https://instagram.com/ppsh_kz/" target="_blank">
+                  <img
+                    src="./images/ppsh_rest-logo.png"
+                    alt="ppsh restourant logo"
+                  />
+                </a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/mehmon_cafe-logo.png"
-                  alt="mehmon cafe logo"
-                />
+                <a href="https://mehmon.ru/" target="_blank">
+                  <img
+                    src="./images/mehmon_cafe-logo.png"
+                    alt="mehmon cafe logo"
+                  />
+                </a>
               </div>
               <div class="partners__items__card">
-                <img
-                  src="./images/zdraste_cafe-logo.png"
-                  alt="zdraste cafe logo"
-                />
+                <a href="https://zdrastecafe.ru/" target="_blank">
+                  <img
+                    src="./images/zdraste_cafe-logo.png"
+                    alt="zdraste cafe logo"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="feedback" id="feedback">
+      <section class="feedback">
         <img
           class="feedback__decor"
           src="./images/feedback-decor-left.svg"
@@ -238,7 +356,7 @@
           src="./images/feedback-decor-right.svg"
           alt=""
         />
-        <div class="container">
+        <div class="container" id="feedback">
           <div class="feedback__title">
             <h2>оставь свою заявку</h2>
           </div>
@@ -302,6 +420,17 @@
                   />
                 </label>
               </div>
+              <div class="feedback__form__item">
+                <label for="form-message">
+                  <textarea
+                    name="form-message"
+                    id="form-message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </label>
+              </div>
               <button>отправить</button>
             </form>
           </div>
@@ -309,5 +438,6 @@
       </section>
     </main>
     <footer id="footer"></footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

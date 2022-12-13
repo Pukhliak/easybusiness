@@ -1,7 +1,10 @@
 .hero {
   padding-top: $padding200;
   padding-bottom: $padding100;
+  height: 100vh;
   position: relative;
+  background-image: url("/images/World-Map-white.svg");
+  background-repeat: no-repeat;
 
   > img {
     &:first-of-type {
@@ -37,39 +40,10 @@
         width: toRem(150);
         min-width: toRem(75);
       }
-    }
 
-    &__rocket {
-      padding-right: 15px;
-
-      img {
-        transform: translate(40%, -25%);
-      }
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    gap: toRem(20);
-    justify-content: flex-end;
-
-    a {
-      padding: toRem(8) toRem(32) toRem(24);
-      background: $colorBlack;
-      color: $colorWhite;
-      font-size: toRem(24);
-      transition: background 0.3s ease;
-
-      &:first-child {
-        border-radius: 10px 10px 10px 0px;
-      }
-
-      &:last-child {
-        border-radius: 10px 10px 0px;
-      }
-
-      &:hover {
-        background: $colorGray;
+      &--3dx {
+        width: toRem(26);
+        margin: 0 toRem(12);
       }
     }
   }
