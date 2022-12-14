@@ -6,6 +6,8 @@
       padding: 0;
 
       li {
+        position: relative;
+
         a {
           position: relative;
           font-family: "Greenth-Regular";
@@ -32,6 +34,29 @@
 
         &:not(:last-child) {
           margin-right: toRem(22);
+        }
+
+        & > ul {
+          flex-direction: column;
+          position: absolute;
+          width: 0;
+          top: 100%;
+          left: 0;
+          display: block;
+          padding: 0 toRem(8);
+          background: $colorBlack;
+          transform: translate(200%, 12%);
+          transition: all 0.3s ease;
+
+          & > li:last-of-type {
+            padding-bottom: toRem(10);
+          }
+        }
+
+        &:hover > ul {
+          transform: translate(0%, 12%);
+          width: max-content;
+          z-index: 1;
         }
       }
     }
