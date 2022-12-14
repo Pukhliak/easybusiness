@@ -4,6 +4,7 @@
 
   &__title {
     display: flex;
+    align-items: stretch;
     gap: toRem(22);
     margin-bottom: toRem(50);
 

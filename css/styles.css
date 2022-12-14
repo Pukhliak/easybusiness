@@ -312,6 +312,7 @@ h5 {
   padding-bottom: 6.25rem; }
   .partners__title {
     display: flex;
+    align-items: stretch;
     gap: 1.375rem;
     margin-bottom: 3.125rem; }
     .partners__title h3 {
