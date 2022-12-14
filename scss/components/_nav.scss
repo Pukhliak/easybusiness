@@ -50,6 +50,10 @@
           & > li:last-of-type {
             padding-bottom: toRem(10);
           }
+
+          & > li a {
+            font-size: toRem(14);
+          }
         }
 
         &:hover > ul {

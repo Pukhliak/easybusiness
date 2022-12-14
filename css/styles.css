@@ -107,6 +107,8 @@ h5 {
       transition: all 0.3s ease; }
       .header__nav ul li > ul > li:last-of-type {
         padding-bottom: 0.625rem; }
+      .header__nav ul li > ul > li a {
+        font-size: 0.875rem; }
     .header__nav ul li:hover > ul {
       transform: translate(0%, 0%);
       width: max-content;
