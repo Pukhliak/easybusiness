@@ -5,9 +5,9 @@
   &__title {
     display: flex;
     margin-bottom: toRem(60);
+    align-items: baseline;
 
     img {
-      transform: translateY(25%);
       margin-right: toRem(30);
     }
   }

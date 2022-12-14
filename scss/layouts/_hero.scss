@@ -5,6 +5,8 @@
   position: relative;
   background-image: url("../images/World-Map-white.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
 
   > img {
     &:first-of-type {
