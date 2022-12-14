@@ -1,5 +1,5 @@
 .footer {
-  background: $colorBlack;
+  background-color: rgba(0, 0, 0, 1);
 
   &__wrapper {
     display: flex;
@@ -10,10 +10,19 @@
   &__contacts {
     p,
     a {
-      font-family: "Grenth-Regular";
+      font-family: "Greenth-Regular";
       color: $colorWhite;
       font-size: toRem(18);
       padding: 0 toRem(10);
     }
+  }
+}
+
+.footer__black {
+  background-color: rgb(255, 255, 255);
+
+  p,
+  a {
+    color: $colorBlack;
   }
 }

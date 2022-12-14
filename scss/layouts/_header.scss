@@ -10,13 +10,8 @@
   &__logo {
     padding: toRem(10) 0 toRem(20);
   }
+}
 
-  &__contacts {
-    a {
-      font-family: "Greenth-Regular";
-      font-size: toRem(21);
-      line-height: 1.3;
-      color: $colorWhite;
-    }
-  }
+.header__black {
+  background: $colorWhite;
 }

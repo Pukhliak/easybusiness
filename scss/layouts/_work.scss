@@ -20,7 +20,7 @@
     &__card {
       position: relative;
       width: calc(33% - 26px);
-      background: #101010;
+      background: $colorWhite;
       padding: toRem(10) toRem(20);
       max-height: toRem(240);
       border-image: url("../images/gradient-border.svg") 75 fill/36px/1px
@@ -42,13 +42,13 @@
       }
 
       h5 {
-        color: $colorWhite;
+        color: $colorBlack;
       }
 
       p {
         font-family: "Montserrat-500";
         font-size: toRem(12);
-        color: $colorWhite;
+        color: $colorBlack;
         margin-right: toRem(55);
       }
 
@@ -62,7 +62,23 @@
 
   &__bottomLine {
     img {
-      transform: translateX(-5%);
+      width: 100%;
+    }
+  }
+}
+
+.work__black {
+  background-color: rgba(0, 0, 0, 1);
+
+  h4 {
+    color: $colorWhite;
+  }
+  & div:nth-child(2) div {
+    background: $colorBlack;
+
+    h5,
+    p {
+      color: $colorWhite;
     }
   }
 }

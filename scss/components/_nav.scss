@@ -65,3 +65,12 @@
     }
   }
 }
+.header__black {
+  nav ul li a {
+    color: $colorBlack;
+  }
+
+  nav ul li ul {
+    background: $colorWhite;
+  }
+}

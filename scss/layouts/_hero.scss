@@ -12,6 +12,7 @@
     &:first-of-type {
       position: absolute;
       top: 40%;
+      z-index: 2;
     }
   }
 
@@ -49,4 +50,8 @@
       }
     }
   }
+}
+.hero__black {
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("/images/World-Map-black.svg");
 }
