@@ -1,0 +1,19 @@
+.footer {
+  background: $colorBlack;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    p,
+    a {
+      font-family: "Grenth-Regular";
+      color: $colorWhite;
+      font-size: toRem(18);
+      padding: 0 toRem(10);
+    }
+  }
+}
