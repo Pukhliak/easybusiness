@@ -1,5 +1,10 @@
 .footer {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgb(255, 255, 255);
+
+  &__logo {
+    display: flex;
+    gap: toRem(20);
+  }
 
   &__wrapper {
     display: flex;
@@ -11,18 +16,9 @@
     p,
     a {
       font-family: "Greenth-Regular";
-      color: $colorWhite;
+      color: $colorBlack;
       font-size: toRem(18);
       padding: 0 toRem(10);
     }
-  }
-}
-
-.footer__black {
-  background-color: rgb(255, 255, 255);
-
-  p,
-  a {
-    color: $colorBlack;
   }
 }

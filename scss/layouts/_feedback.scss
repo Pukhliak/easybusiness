@@ -2,6 +2,8 @@
   padding-top: $padding50;
   padding-bottom: $padding100;
   position: relative;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 0;
 
   > img {
     &:first-of-type {
@@ -18,6 +20,9 @@
   &__title {
     text-align: center;
     margin-bottom: toRem(80);
+    h2 {
+      color: $colorWhite;
+    }
   }
 
   &__form {
@@ -58,14 +63,5 @@
         background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff);
       }
     }
-  }
-}
-
-.feedback__black {
-  background-color: rgba(0, 0, 0, 1);
-  z-index: 0;
-
-  & div:nth-child(1) > div:nth-child(1) h2 {
-    color: $colorWhite;
   }
 }

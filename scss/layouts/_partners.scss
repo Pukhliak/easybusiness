@@ -1,6 +1,8 @@
 .partners {
   padding-top: $padding50;
   padding-bottom: $padding100;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 0;
 
   &__title {
     display: flex;
@@ -22,7 +24,7 @@
     padding: toRem(86);
     border-radius: toRem(20);
     z-index: 2;
-    background: $colorWhite;
+    background: $colorBlack;
   }
 
   &__wrapper {
@@ -50,14 +52,5 @@
       border-radius: inherit;
       background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff);
     }
-  }
-}
-
-.partners__black {
-  background-color: rgba(0, 0, 0, 1);
-  z-index: 0;
-
-  & div:nth-child(2) div {
-    background: $colorBlack;
   }
 }

@@ -2,6 +2,7 @@
   padding-top: $padding100;
   padding-bottom: $padding100;
   position: relative;
+  background-color: rgba(0, 0, 0, 1);
 
   > img {
     &:first-of-type {
@@ -16,11 +17,13 @@
 
     h1 {
       margin: 0 0 toRem(76) 0;
+      color: $colorWhite;
     }
 
     p {
       font-family: "Montserrat-400";
       font-size: toRem(30);
+      color: $colorWhite;
     }
 
     span {
@@ -32,14 +35,6 @@
   &__logo {
     display: flex;
     justify-content: flex-end;
-  }
-}
-
-.about__black {
-  background-color: rgba(0, 0, 0, 1);
-
-  h1,
-  p {
-    color: $colorWhite;
+    gap: toRem(12);
   }
 }

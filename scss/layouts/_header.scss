@@ -1,5 +1,5 @@
 .header {
-  background: $colorBlack;
+  background: $colorWhite;
 
   &__wrapper {
     display: flex;
@@ -10,8 +10,4 @@
   &__logo {
     padding: toRem(10) 0 toRem(20);
   }
-}
-
-.header__black {
-  background: $colorWhite;
 }

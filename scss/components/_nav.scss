@@ -1,5 +1,10 @@
 .header {
   &__nav {
+    img {
+      width: toRem(14);
+      height: auto;
+      transition: transform 0.3s ease;
+    }
     ul {
       display: flex;
       list-style: none;
@@ -12,7 +17,7 @@
           font-family: "Greenth-Regular";
           font-size: toRem(18);
           line-height: 1.3;
-          color: $colorWhite;
+          color: $colorBlack;
 
           &::after {
             content: "";
@@ -43,9 +48,13 @@
           left: 0;
           display: block;
           padding: 0 toRem(8);
-          background: $colorBlack;
+          background: $colorWhite;
           transform: translate(200%, 12%);
-          transition: all 0.3s ease;
+          transition: transform 0.3s ease;
+
+          li {
+            margin: toRem(3);
+          }
 
           & > li:last-of-type {
             padding-bottom: toRem(10);
@@ -56,21 +65,18 @@
           }
         }
 
-        &:hover > ul {
-          transform: translate(0%, 0%);
-          width: max-content;
-          z-index: 2;
+        &:hover {
+          > ul {
+            transform: translate(0%, 10%);
+            width: max-content;
+            z-index: 2;
+          }
+
+          img {
+            transform: rotate(90deg);
+          }
         }
       }
     }
-  }
-}
-.header__black {
-  nav ul li a {
-    color: $colorBlack;
-  }
-
-  nav ul li ul {
-    background: $colorWhite;
   }
 }

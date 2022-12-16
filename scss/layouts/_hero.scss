@@ -1,9 +1,9 @@
 .hero {
   padding-top: $padding200;
   padding-bottom: $padding100;
-  height: 100vh;
   position: relative;
-  background-image: url("../images/World-Map-white.svg");
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("../images/World-Map-black.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;
@@ -34,6 +34,10 @@
       display: flex;
       align-items: flex-end;
 
+      & img:first-child {
+        margin: auto toRem(40);
+      }
+
       &--easy {
         width: toRem(690);
         min-width: toRem(345);
@@ -50,8 +54,4 @@
       }
     }
   }
-}
-.hero__black {
-  background-color: rgba(0, 0, 0, 1);
-  background-image: url("/images/World-Map-black.svg");
 }
