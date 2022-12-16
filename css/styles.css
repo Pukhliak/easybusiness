@@ -171,17 +171,21 @@ h5 {
   --primary-color: #ffe5b5;
   --secondary-color: #1c2138;
   --tertiary-color: #ffffff;
-  --text-color: #a9a9a9;
-  --disabled-text-color: #a9a9a9;
-  --bg-color: #000000; }
+  --text-color: #ff7c7c;
+  --disabled-text-color: #ff7c7c;
+  --bg-color: #000000;
+  --main-bg-color: #000000;
+  --main-text-color: #ffffff; }
 
 [data-theme="dark"] {
   --primary-color: #fe9f5b;
   --secondary-color: #e7e8eb;
   --tertiary-color: #ffffff;
-  --text-color: #a9a9a9;
-  --disabled-text-color: #a9a9a9;
-  --bg-color: #9b9b9b; }
+  --text-color: #ff7c7c;
+  --disabled-text-color: #ff7c7c;
+  --bg-color: #9b9b9b;
+  --main-bg-color: #ffffff;
+  --main-text-color: #000000; }
 
 .main-wrapper {
   display: flex;
@@ -314,7 +318,7 @@ h5 {
   padding-bottom: 6.25rem;
   position: relative;
   background-color: black;
-  background-image: url("../images/World-Map-black.svg");
+  background-image: url("../images/World-Map.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center; }
