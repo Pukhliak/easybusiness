@@ -2,7 +2,7 @@
   padding-top: $padding100;
   padding-bottom: $padding100;
   position: relative;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--main-bg-color);
 
   > img {
     &:first-of-type {
@@ -17,13 +17,13 @@
 
     h1 {
       margin: 0 0 toRem(76) 0;
-      color: $colorWhite;
+      color: var(--main-text-color);
     }
 
     p {
       font-family: "Montserrat-400";
       font-size: toRem(30);
-      color: $colorWhite;
+      color: var(--main-text-color);
     }
 
     span {
@@ -36,5 +36,11 @@
     display: flex;
     justify-content: flex-end;
     gap: toRem(12);
+
+    svg {
+      path {
+        fill: var(--main-text-color);
+      }
+    }
   }
 }

@@ -10,6 +10,8 @@
   --bg-color: #000000;
   --main-bg-color: #000000;
   --main-text-color: #ffffff;
+  --inversion-bg-color: #ffffff;
+  --inversion-text-color: #000000;
 }
 [data-theme="dark"] {
   --primary-color: #fe9f5b;
@@ -20,6 +22,8 @@
   --bg-color: #9b9b9b;
   --main-bg-color: #ffffff;
   --main-text-color: #000000;
+  --inversion-bg-color: #000000;
+  --inversion-text-color: #ffffff;
 }
 // END :: CSS variable declaration
 
@@ -33,7 +37,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--text-color);
-    font-family: "Poppins", "sans-serif";
+    font-family: "Greenth-Regular", "sans-serif";
   }
   .disabled {
     color: var(--disabled-text-color);

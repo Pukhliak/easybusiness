@@ -1,7 +1,7 @@
 .partners {
   padding-top: $padding50;
   padding-bottom: $padding100;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--main-bg-color);
   z-index: 0;
 
   &__title {
@@ -12,6 +12,12 @@
 
     h3 {
       transform: translateY(-30%);
+    }
+
+    svg {
+      path {
+        fill: var(--main-text-color);
+      }
     }
   }
 
@@ -24,7 +30,7 @@
     padding: toRem(86);
     border-radius: toRem(20);
     z-index: 2;
-    background: $colorBlack;
+    background: var(--main-bg-color);
   }
 
   &__wrapper {
@@ -35,7 +41,7 @@
     position: relative;
     box-sizing: border-box;
 
-    background: $colorWhite;
+    background: var(--inversion-bg-color);
     background-clip: padding-box;
     border: solid 5px transparent;
     border-radius: toRem(20);

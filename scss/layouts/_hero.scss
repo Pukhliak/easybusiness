@@ -2,7 +2,7 @@
   padding-top: $padding200;
   padding-bottom: $padding100;
   position: relative;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--main-bg-color);
   background-image: url("../images/World-Map.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -34,13 +34,17 @@
       display: flex;
       align-items: flex-end;
 
-      & img:first-child {
-        margin: auto toRem(40);
+      svg {
+        width: toRem(486);
+        height: toRem(164);
+
+        & > path {
+          fill: var(--main-text-color);
+        }
       }
 
-      &--easy {
-        width: toRem(690);
-        min-width: toRem(345);
+      & img:first-child {
+        margin: auto toRem(40);
       }
 
       &--iiko {

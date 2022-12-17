@@ -1,9 +1,15 @@
 .footer {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--inversion-bg-color);
 
   &__logo {
     display: flex;
     gap: toRem(20);
+
+    svg {
+      path {
+        fill: var(--inversion-text-color);
+      }
+    }
   }
 
   &__wrapper {
@@ -16,7 +22,7 @@
     p,
     a {
       font-family: "Greenth-Regular";
-      color: $colorBlack;
+      color: var(--inversion-text-color);
       font-size: toRem(18);
       padding: 0 toRem(10);
     }

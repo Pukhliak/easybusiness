@@ -1,5 +1,5 @@
 .header {
-  background: $colorWhite;
+  background: var(--inversion-bg-color);
 
   &__wrapper {
     display: flex;
