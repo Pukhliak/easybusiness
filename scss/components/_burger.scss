@@ -21,7 +21,7 @@
         transition: all 0.3s linear;
 
         &:nth-child(1) {
-          transform-origin: 0% 50%;
+          transform-origin: -3% 80%;
         }
 
         &:nth-child(2) {
@@ -31,7 +31,7 @@
         }
 
         &:nth-child(3) {
-          transform-origin: bottom left;
+          transform-origin: 15% 80%;
         }
       }
     }
@@ -40,7 +40,6 @@
 
 .open {
   span:nth-child(1) {
-    width: 95%;
     transform: rotate(45deg);
   }
 
@@ -50,7 +49,6 @@
   }
 
   span:nth-child(3) {
-    width: 95%;
     transform: rotate(-45deg);
   }
 }
