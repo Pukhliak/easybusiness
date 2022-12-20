@@ -370,13 +370,13 @@ nav ul li ul {
         border-radius: 0.5rem;
         transition: all 0.3s linear; }
         .header__burger span:nth-child(1) {
-          transform-origin: -3% 80%; }
+          transform-origin: top left; }
         .header__burger span:nth-child(2) {
           transform: translateX(0);
           opacity: 1;
           transition: opacity 0.3s linear, transform 0.3s linear 0.1s; }
         .header__burger span:nth-child(3) {
-          transform-origin: 15% 80%; } }
+          transform-origin: bottom left; } }
 
 .open span:nth-child(1) {
   transform: rotate(45deg); }

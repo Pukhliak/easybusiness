@@ -21,7 +21,7 @@
         transition: all 0.3s linear;
 
         &:nth-child(1) {
-          transform-origin: -3% 80%;
+          transform-origin: top left;
         }
 
         &:nth-child(2) {
@@ -31,7 +31,7 @@
         }
 
         &:nth-child(3) {
-          transform-origin: 15% 80%;
+          transform-origin: bottom left;
         }
       }
     }
