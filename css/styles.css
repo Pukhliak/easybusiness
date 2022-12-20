@@ -364,7 +364,7 @@ nav ul li ul {
       margin-left: auto; }
       .header__burger span {
         font-family: "Greenth-Regilar";
-        width: 100%;
+        width: 25px;
         height: 4px;
         background-color: var(--main-bg-color);
         border-radius: 0.5rem;
