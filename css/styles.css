@@ -363,6 +363,7 @@ nav ul li ul {
       background: transparent;
       margin-left: auto; }
       .header__burger span {
+        font-family: "Greenth-Regilar";
         width: 100%;
         height: 4px;
         background-color: var(--main-bg-color);
