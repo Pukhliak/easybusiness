@@ -8,53 +8,54 @@
   background-size: contain;
   background-position-x: center;
 
+  @media (max-width: 1024px) {
+    padding-top: $padding100;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: $padding50;
+    padding-bottom: $padding50;
+  }
+
   > img {
     &:first-of-type {
       position: absolute;
       top: 40%;
-      z-index: 2;
+      z-index: 1;
     }
   }
 
   &__images {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    gap: toRem(20);
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      gap: toRem(8);
+    }
+
+    &__easy {
+      width: toRem(486);
+    }
 
     img {
       max-width: 100%;
       height: auto;
     }
 
-    span {
-      padding: 0 toRem(20);
-      font-size: x-large;
+    &__iiko {
+      width: toRem(108);
     }
 
-    &__logo {
-      display: flex;
-      align-items: flex-end;
+    svg {
+      width: 100%;
+      height: auto;
+      max-width: toRem(486);
 
-      svg {
-        width: toRem(486);
-        height: toRem(164);
-
-        & > path {
-          fill: var(--main-text-color);
-        }
-      }
-
-      & img:first-child {
-        margin: auto toRem(40);
-      }
-
-      &--iiko {
-        width: toRem(150);
-        min-width: toRem(75);
-      }
-
-      &--3dx {
-        width: toRem(26);
-        margin: 0 toRem(12);
+      & > path {
+        fill: var(--main-text-color);
       }
     }
   }

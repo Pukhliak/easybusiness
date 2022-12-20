@@ -5,6 +5,10 @@
   background-color: var(--main-bg-color);
   z-index: 0;
 
+  @media (max-width: 1068px) {
+    padding-top: 0;
+  }
+
   > img {
     &:first-of-type {
       position: absolute;
@@ -20,8 +24,17 @@
   &__title {
     text-align: center;
     margin-bottom: toRem(80);
+
+    @media (max-width: 1068px) {
+      margin-bottom: toRem(30);
+    }
+
     h2 {
       color: var(--main-text-color);
+
+      @media (max-width: 768px) {
+        font-size: toRem(32);
+      }
     }
   }
 
@@ -32,8 +45,27 @@
       flex-direction: column;
       flex: 1 0 40%;
 
+      @media (max-width: 1068px) {
+        flex: 1 0 30%;
+      }
+
+      @media (max-width: 768px) {
+        gap: toRem(30);
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
       h3 {
         color: var(--inversion-text-color);
+
+        @media (max-width: 1068px) {
+          font-size: toRem(32);
+        }
+
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: toRem(32);
+        }
       }
 
       svg {
@@ -55,6 +87,15 @@
       border: solid 5px transparent;
       border-radius: toRem(20);
       margin: 0 toRem(100);
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin: 0 toRem(20);
+      }
+
+      @media (max-width: 1068px) {
+        padding: toRem(12) toRem(22);
+      }
 
       &:before {
         content: "";

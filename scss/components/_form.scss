@@ -7,6 +7,15 @@
     gap: toRem(18);
     flex: 1 0 60%;
 
+    @media (max-width: 1068px) {
+      flex: 1 0 70%;
+    }
+
+    @media (max-width: 768px) {
+      flex: 1 0 100%;
+      align-items: center;
+    }
+
     button {
       background: $colorWhite;
       border-radius: toRem(8) 0px toRem(8) toRem(8);
@@ -20,6 +29,7 @@
     &__item {
       width: 80%;
       border-radius: toRem(8) toRem(8) 0px toRem(8);
+
       input,
       textarea {
         border: none;

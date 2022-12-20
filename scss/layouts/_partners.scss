@@ -10,11 +10,20 @@
     gap: toRem(22);
     margin-bottom: toRem(50);
 
+    img {
+      width: 66px;
+      height: auto;
+      max-width: 100%;
+    }
+
     h3 {
       transform: translateY(-30%);
     }
 
     svg {
+      width: 574px;
+      height: auto;
+      max-width: 100%;
       path {
         fill: var(--main-text-color);
       }
@@ -31,6 +40,17 @@
     border-radius: toRem(20);
     z-index: 2;
     background: var(--main-bg-color);
+
+    @media (max-width: 768px) {
+      padding: toRem(20) toRem(10);
+      gap: toRem(18);
+    }
+
+    &__card {
+      img {
+        max-width: 100%;
+      }
+    }
   }
 
   &__wrapper {

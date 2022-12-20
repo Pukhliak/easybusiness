@@ -4,6 +4,11 @@
   position: relative;
   background-color: var(--main-bg-color);
 
+  @media (max-width: 1024px) {
+    padding-top: $padding50;
+    padding-bottom: $padding50;
+  }
+
   > img {
     &:first-of-type {
       position: absolute;
@@ -14,21 +19,38 @@
 
   &__title {
     padding-bottom: $padding100;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 0;
+    }
 
     h1 {
       margin: 0 0 toRem(76) 0;
       color: var(--main-text-color);
+
+      @media (max-width: 768px) {
+        margin: 0;
+        font-size: toRem(38);
+      }
     }
 
     p {
       font-family: "Montserrat-400";
       font-size: toRem(30);
       color: var(--main-text-color);
+      @media (max-width: 768px) {
+        font-size: toRem(16);
+      }
     }
 
     span {
       font-family: "Montserrat-700";
       font-size: toRem(30);
+      @media (max-width: 768px) {
+        font-size: toRem(16);
+      }
     }
   }
 
@@ -36,6 +58,7 @@
     display: flex;
     justify-content: flex-end;
     gap: toRem(12);
+    position: relative;
 
     svg {
       path {

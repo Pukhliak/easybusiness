@@ -16,6 +16,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding-top: toRem(30);
+    }
   }
 
   &__contacts {
@@ -25,6 +30,10 @@
       color: var(--inversion-text-color);
       font-size: toRem(18);
       padding: 0 toRem(10);
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
     }
   }
 }

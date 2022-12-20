@@ -30,3 +30,20 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+// drop-down
+const dropDownArrow = document.querySelector(".header__nav__focus");
+const dropDownMenu = document.querySelector("#drop-down");
+
+dropDownArrow.addEventListener("click", function () {
+  dropDownMenu.classList.toggle("header__nav__drop-down");
+  dropDownArrow.classList.toggle("down");
+});
+
+// burger-menu
+const nav = document.querySelector(".header__nav");
+const burger = document.querySelector(".header__burger");
+burger.addEventListener("click", function () {
+  this.classList.toggle("open");
+  nav.classList.toggle("show-nav");
+});
