@@ -1,0 +1,108 @@
+.aggregator {
+  position: relative;
+  padding: $padding100 0;
+  background-color: var(--main-bg-color);
+
+  img {
+    position: absolute;
+  }
+
+  @media (max-width: 1024px) {
+    padding: $padding50 0;
+  }
+
+  h2,
+  h6,
+  p,
+  span {
+    margin: 0;
+    color: var(--main-text-color);
+  }
+
+  h2 {
+    @media (max-width: 1024px) {
+      font-size: toRem(30);
+    }
+  }
+
+  h6 {
+    margin: toRem(20) 0;
+    @media (max-width: 1024px) {
+      font-size: toRem(22);
+    }
+  }
+
+  p {
+    font-family: "Montserrat-400";
+    font-size: toRem(26);
+    @media (max-width: 1024px) {
+      font-size: toRem(16);
+    }
+  }
+
+  span {
+    font-family: "Montserrat-700";
+  }
+
+  &__info {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+    padding-bottom: $padding50;
+  }
+
+  &__title {
+    z-index: 2;
+    position: relative;
+    padding-bottom: $padding100;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      padding-bottom: $padding50;
+    }
+  }
+
+  &__links {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(17);
+
+    h6 {
+      text-align: center;
+    }
+    a {
+      color: var(--main-text-color);
+      position: relative;
+      font-size: toRem(28);
+
+      @media (max-width: 768px) {
+        font-size: toRem(16);
+        text-align: center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: toRem(-5);
+        left: 0;
+        width: 100%;
+        height: toRem(3);
+        background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff);
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 70%;
+          transform: translateX(20%);
+        }
+      }
+    }
+  }
+}

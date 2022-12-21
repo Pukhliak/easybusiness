@@ -84,7 +84,7 @@ nav ul li ul {
       transition: transform 0.3s ease;
       transform: translate(0%, 9%);
       width: max-content;
-      z-index: 2;
+      z-index: 5;
 
       @media (max-width: 768px) {
         transform: translate(32%, 9%);
@@ -121,6 +121,7 @@ nav ul li ul {
   display: block;
   margin-left: 0;
   margin-right: auto;
+  z-index: 5;
 
   ul {
     flex-direction: column;

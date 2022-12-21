@@ -3,7 +3,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 a {
   font-family: $titleFont;
   line-height: $baseLineHeight;
@@ -25,4 +24,8 @@ h4 {
 }
 h5 {
   font-size: toRem(28);
+}
+h6 {
+  font-family: "Montserrat-700";
+  font-size: toRem(30);
 }
