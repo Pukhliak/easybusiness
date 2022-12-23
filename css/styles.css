@@ -941,8 +941,11 @@ nav ul li ul {
   position: relative;
   padding: 6.25rem 0;
   background-color: var(--main-bg-color); }
-  .accounting img {
+  .accounting__decor {
     position: absolute; }
+    @media (max-width: 1024px) {
+      .accounting__decor {
+        display: none; } }
   @media (max-width: 1024px) {
     .accounting {
       padding: 3.125rem 0; } }
@@ -976,6 +979,8 @@ nav ul li ul {
     flex-direction: column;
     gap: 1.875rem;
     padding-bottom: 3.125rem; }
+    .accounting__info > :nth-child(6) {
+      flex-direction: row-reverse; }
     .accounting__info a {
       position: relative;
       color: var(--main-text-color); }
@@ -992,6 +997,12 @@ nav ul li ul {
       .accounting__info a:hover::after {
         width: 70%;
         transform: translateX(20%); }
+    .accounting__info__item {
+      display: flex;
+      align-items: center; }
+      .accounting__info__item img {
+        max-width: 50%;
+        height: auto; }
   .accounting__title {
     z-index: 2;
     position: relative;

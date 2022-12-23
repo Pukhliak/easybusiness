@@ -3,8 +3,12 @@
   padding: $padding100 0;
   background-color: var(--main-bg-color);
 
-  img {
+  &__decor {
     position: absolute;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -53,6 +57,10 @@
     gap: toRem(30);
     padding-bottom: $padding50;
 
+    & > :nth-child(6) {
+      flex-direction: row-reverse;
+    }
+
     a {
       position: relative;
       color: var(--main-text-color);
@@ -74,6 +82,16 @@
           width: 70%;
           transform: translateX(20%);
         }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      img {
+        max-width: 50%;
+        height: auto;
       }
     }
   }
