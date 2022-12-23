@@ -36,7 +36,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: toRem(36);
-    padding: toRem(86);
+    padding: toRem(36);
     border-radius: toRem(20);
     z-index: 2;
     background: var(--main-bg-color);
@@ -47,6 +47,15 @@
     }
 
     &__card {
+      @media (max-width: 1024px) {
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        width: 40%;
+        flex: initial;
+      }
+
       img {
         max-width: 100%;
       }

@@ -3,8 +3,11 @@
   padding: $padding100 0;
   background-color: var(--main-bg-color);
 
-  img {
+  &__decor {
     position: absolute;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -26,6 +29,7 @@
   }
 
   h6 {
+    text-align: center;
     margin: toRem(20) 0;
     @media (max-width: 1024px) {
       font-size: toRem(22);
@@ -51,6 +55,45 @@
     flex-direction: column;
     gap: toRem(30);
     padding-bottom: $padding50;
+
+    & > div:nth-child(3) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 768px) {
+        display: block;
+        img {
+          float: right;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      & > div:nth-child(1) {
+        display: block;
+
+        img {
+          float: left;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: toRem(50);
+
+      @media (max-width: 768px) {
+        gap: toRem(15);
+      }
+      img {
+        position: relative;
+        width: 35%;
+
+        @media (max-width: 768px) {
+          width: 40%;
+        }
+      }
+    }
   }
 
   &__title {
@@ -71,10 +114,8 @@
     flex-direction: column;
     align-items: center;
     gap: toRem(17);
+    text-align: center;
 
-    h6 {
-      text-align: center;
-    }
     a {
       position: relative;
 
