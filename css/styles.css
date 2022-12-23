@@ -1038,10 +1038,13 @@ nav ul li ul {
 
 .decor-image {
   position: absolute; }
+  @media (max-width: 1024px) {
+    .decor-image {
+      display: none; } }
 
 .telegram {
   position: relative;
-  padding: 6.25rem 0;
+  padding-top: 6.25rem;
   background-color: var(--main-bg-color); }
   @media (max-width: 1024px) {
     .telegram {
@@ -1086,6 +1089,16 @@ nav ul li ul {
     flex-direction: column;
     gap: 1.875rem;
     padding-bottom: 3.125rem; }
+    .telegram__info__item {
+      display: flex;
+      align-items: center;
+      gap: 1.875rem; }
+      @media (max-width: 768px) {
+        .telegram__info__item {
+          display: block; }
+          .telegram__info__item img {
+            float: left;
+            width: 50%; } }
   .telegram__title {
     z-index: 2;
     position: relative;
