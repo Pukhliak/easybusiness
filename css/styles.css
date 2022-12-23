@@ -1146,11 +1146,14 @@ nav ul li ul {
   position: relative;
   padding: 6.25rem 0;
   background-color: var(--main-bg-color); }
-  .suppliers img {
-    position: absolute; }
   @media (max-width: 1024px) {
     .suppliers {
       padding: 3.125rem 0; } }
+  .suppliers__decor {
+    position: absolute; }
+    @media (max-width: 1024px) {
+      .suppliers__decor {
+        display: none; } }
   .suppliers h2,
   .suppliers h6,
   .suppliers p,
@@ -1180,6 +1183,23 @@ nav ul li ul {
     flex-direction: column;
     gap: 1.875rem;
     padding-bottom: 3.125rem; }
+    .suppliers__info > :nth-child(3) {
+      flex-direction: row-reverse; }
+      @media (max-width: 768px) {
+        .suppliers__info > :nth-child(3) img {
+          float: right; } }
+    .suppliers__info__item {
+      display: flex;
+      align-items: center;
+      gap: 1.875rem; }
+      @media (max-width: 768px) {
+        .suppliers__info__item {
+          display: block; }
+          .suppliers__info__item img {
+            float: left; } }
+      .suppliers__info__item img {
+        max-width: 40%;
+        height: auto; }
   .suppliers__title {
     z-index: 2;
     position: relative;
@@ -1217,8 +1237,11 @@ nav ul li ul {
   position: relative;
   padding: 6.25rem 0;
   background-color: var(--main-bg-color); }
-  .aggregator img {
+  .aggregator__decor {
     position: absolute; }
+    @media (max-width: 1024px) {
+      .aggregator__decor {
+        display: none; } }
   @media (max-width: 1024px) {
     .aggregator {
       padding: 3.125rem 0; } }
@@ -1251,6 +1274,31 @@ nav ul li ul {
     flex-direction: column;
     gap: 1.875rem;
     padding-bottom: 3.125rem; }
+    .aggregator__info > :nth-child(3) {
+      flex-direction: row-reverse; }
+      @media (max-width: 768px) {
+        .aggregator__info > :nth-child(3) img {
+          float: right;
+          margin: 0; } }
+    .aggregator__info__item {
+      display: flex;
+      align-items: center;
+      gap: 3.125rem; }
+      @media (max-width: 1024px) {
+        .aggregator__info__item {
+          gap: 1.125rem; } }
+      @media (max-width: 768px) {
+        .aggregator__info__item {
+          display: block; }
+          .aggregator__info__item img {
+            float: left;
+            margin-right: 0.875rem; } }
+      .aggregator__info__item img {
+        width: 30%;
+        height: auto; }
+        @media (max-width: 768px) {
+          .aggregator__info__item img {
+            width: 50%; } }
   .aggregator__title {
     z-index: 2;
     position: relative;

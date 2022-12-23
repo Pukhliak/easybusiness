@@ -3,8 +3,12 @@
   padding: $padding100 0;
   background-color: var(--main-bg-color);
 
-  img {
+  &__decor {
     position: absolute;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -51,6 +55,45 @@
     flex-direction: column;
     gap: toRem(30);
     padding-bottom: $padding50;
+
+    & > :nth-child(3) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 768px) {
+        img {
+          float: right;
+          margin: 0;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: toRem(50);
+
+      @media (max-width: 1024px) {
+        gap: toRem(18);
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+
+        img {
+          float: left;
+          margin-right: toRem(14);
+        }
+      }
+
+      img {
+        width: 30%;
+        height: auto;
+
+        @media (max-width: 768px) {
+          width: 50%;
+        }
+      }
+    }
   }
 
   &__title {

@@ -3,12 +3,16 @@
   padding: $padding100 0;
   background-color: var(--main-bg-color);
 
-  img {
-    position: absolute;
-  }
-
   @media (max-width: 1024px) {
     padding: $padding50 0;
+  }
+
+  &__decor {
+    position: absolute;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   h2,
@@ -51,6 +55,35 @@
     flex-direction: column;
     gap: toRem(30);
     padding-bottom: $padding50;
+
+    & > :nth-child(3) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 768px) {
+        img {
+          float: right;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: toRem(30);
+
+      @media (max-width: 768px) {
+        display: block;
+
+        img {
+          float: left;
+        }
+      }
+
+      img {
+        max-width: 40%;
+        height: auto;
+      }
+    }
   }
 
   &__title {
