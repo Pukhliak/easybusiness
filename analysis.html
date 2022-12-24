@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -92,8 +93,12 @@
           </div>
           <div class="analysis__info">
             <div class="analysis__info__item">
-              <img src="./images/analysis-1.png" alt="Analysis logo" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/analysis-1.png"
+                alt="Analysis logo"
+              />
+              <p class="wow fadeInRight">
                 <span>Аналитика</span> — неотъемлемая часть любого бизнеса. Наша
                 компания помогает выявить проблемы бизнеса и найти возможности
                 для его устойчивого развития. <br />
@@ -106,8 +111,12 @@
               эффективность работы.
             </h6>
             <div class="analysis__info__item">
-              <img src="./images/analysis-2.png" alt="Analysis logo" />
-              <p>
+              <img
+                class="wow fadeInRight"
+                src="./images/analysis-2.png"
+                alt="Analysis logo"
+              />
+              <p class="wow fadeInLeft">
                 Мы помогаем нашим клиентам увидеть зоны роста по всем возможным
                 направлениям, оптимизировать расходы и увеличить прибыль. <br />
                 Результат нашей работы — это отчёт о прибылях и убытках
@@ -117,8 +126,12 @@
               </p>
             </div>
             <div class="analysis__info__item">
-              <img src="./images/analysis-4.jpg" alt="iiko logo" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/analysis-4.jpg"
+                alt="iiko logo"
+              />
+              <p class="wow fadeInRight">
                 Мы помогаем проанализировать: <br />
                 — результаты ввода сезонного меню <br />
                 — себестоимость по подразделениям <br />
@@ -131,17 +144,29 @@
           </div>
           <div class="analysis__links">
             <h6>Более подробно можно ознакомиться по ссылкам ниже</h6>
-            <a href="./images/analysis_forecast.png" target="_blank">
+            <a
+              class="wow fadeInUpBig"
+              href="./images/analysis_forecast.png"
+              target="_blank"
+            >
               <div>
                 <p>Месячный прогноз по прибыли сети заведений</p>
               </div>
             </a>
-            <a href="./images/analysis_profit-and-lost.png" target="_blank">
+            <a
+              class="wow fadeInUpBig"
+              href="./images/analysis_profit-and-lost.png"
+              target="_blank"
+            >
               <div>
                 <p>Отчет о прибылях и убытках (P&L) по результатам месяца</p>
               </div>
             </a>
-            <a href="./images/analysis_revenue.png" target="_blank">
+            <a
+              class="wow fadeInUpBig"
+              href="./images/analysis_revenue.png"
+              target="_blank"
+            >
               <div>
                 <p>Анализ падения выручки и прогнозы до конца периода</p>
               </div>
@@ -341,5 +366,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
