@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -98,8 +99,12 @@
               </span>
             </p>
             <div class="suppliers__info__item">
-              <img src="./images/suppliers-1.png" alt="partners logo" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/suppliers-1.png"
+                alt="partners logo"
+              />
+              <p class="wow fadeInRight">
                 Мы помогаем сформировать товарную матрицу и постоянно мониторим
                 цены на рынке, предлагая лучшие варианты и передавая информацию
                 в работу закупщику или управляющему. <br />
@@ -110,8 +115,12 @@
               </p>
             </div>
             <div class="suppliers__info__item">
-              <img src="./images/suppliers-2.png" alt="partner relationships" />
-              <p>
+              <img
+                class="wow fadeInRight"
+                src="./images/suppliers-2.png"
+                alt="partner relationships"
+              />
+              <p class="wow fadeInLeft">
                 <span>
                   За время работы с предприятиями общественного питания у
                   нас сформировался пул добросовестных и надёжных поставщиков, с
@@ -315,5 +324,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

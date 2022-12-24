@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -99,8 +100,12 @@
               >
             </p>
             <div class="telegram__info__item">
-              <img src="./images/telegram-1.png" alt="telegram logo" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/telegram-1.png"
+                alt="telegram logo"
+              />
+              <p class="wow fadeInRight">
                 — Сбор и хранение файлов на Yandex и Google дисках. Формирование
                 папок для удобного поиска информации <br />
                 — Сбор и хранение любой текстовой информации в любом формате
@@ -119,7 +124,7 @@
               <h6>Примеры работы бота</h6>
               <p>Сбор и хранение документов через Telegram бота</p>
             </div>
-            <div class="telegram__links__items">
+            <div class="telegram__links__items wow fadeInLeft">
               <div class="telegram__links__items__card">
                 <img
                   src="./images/telegram_example-1-1.png"
@@ -163,7 +168,7 @@
             <div class="telegram__links__title">
               <p>Обработка и формирование запросов через Telegram бота</p>
             </div>
-            <div class="telegram__links__items">
+            <div class="telegram__links__items wow fadeInRight">
               <div class="telegram__links__items__card">
                 <img
                   src="./images/telegram_example-2-1.png"
@@ -398,5 +403,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

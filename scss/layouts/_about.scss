@@ -70,5 +70,9 @@
         fill: var(--main-text-color);
       }
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }

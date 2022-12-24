@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -91,21 +92,29 @@
             <h2>Товарно-складской учет</h2>
           </div>
           <div class="accounting__info">
-            <p>
+            <p class="wow fadeInUpBig">
               <span
                 >Товарно-складской учет – основа корректного учета для
                 ресторанного бизнеса. Это фундамент, на котором строится
                 дальнейшая аналитика и отчетность</span
               >
             </p>
-            <img src="./images/accounting-2.jpg" alt="Workspace photo" />
+            <img
+              class="wow fadeInUpBig"
+              src="./images/accounting-2.jpg"
+              alt="Workspace photo"
+            />
             <h6>
               Мы помогаем выстроить учет с нуля, когда заведение на стадии
               открытия
             </h6>
             <div class="accounting__info__item">
-              <img src="./images/accounting-1.png" alt="accountant" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/accounting-1.png"
+                alt="accountant"
+              />
+              <p class="wow fadeInRight">
                 — Помощь в подборе оборудования и дилера iiko <br />
                 — Внесение номенклатуры и технологических карт <br />
                 — Просчёт себестоимости <br />
@@ -119,8 +128,12 @@
             </div>
             <h6>Ведение учета для работающих заведений</h6>
             <div class="accounting__info__item">
-              <img src="./images/accounting-3.png" alt="accounting logo" />
-              <p>
+              <img
+                class="wow fadeInRight"
+                src="./images/accounting-3.png"
+                alt="accounting logo"
+              />
+              <p class="wow fadeInLeft">
                 — Ежедневное внесение накладных <br />
                 — Проведение списаний <br />
                 — Внесение и разбор инвентаризации <br />
@@ -135,6 +148,8 @@
                 — ABC-анализ меню <br />
               </p>
             </div>
+          </div>
+          <div class="accounting__links wow fadeInUpBig">
             <h6>
               По необходимости внедрение удобной автоматизации с помощью
               <a href="./telegram.html">телеграм-бота</a>
@@ -144,7 +159,6 @@
               составление плана действий – <a href="#feedback">бесплатно</a>
             </h6>
           </div>
-          <div class="accounting__links"></div>
         </div>
       </section>
       <section class="feedback">
@@ -339,5 +353,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

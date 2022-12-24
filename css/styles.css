@@ -392,6 +392,24 @@ nav ul li ul {
 .open span:nth-child(3) {
   transform: rotate(-45deg); }
 
+@keyframes circle {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
+.hero__images__ellipse {
+  animation: circle 2s linear infinite; }
+
+.work__title__img {
+  animation: circle 2s linear infinite; }
+
+.partners__title img {
+  animation: circle 2s linear infinite; }
+
+.footer__logo img {
+  animation: circle 2s linear infinite; }
+
 .header {
   background: var(--inversion-bg-color); }
   .header__wrapper {
@@ -499,6 +517,9 @@ nav ul li ul {
     position: relative; }
     .about__logo svg path {
       fill: var(--main-text-color); }
+    @media (max-width: 768px) {
+      .about__logo {
+        display: none; } }
 
 .work {
   padding-top: 3.125rem;
@@ -543,6 +564,8 @@ nav ul li ul {
       padding: 0.625rem 1.25rem;
       border-image: url("../images/gradient-border.svg") 75 fill/36px/1px stretch;
       border-radius: 1rem; }
+      .work__items__card:hover {
+        transform: scale(1.05); }
       @media (max-width: 1024px) {
         .work__items__card {
           max-width: calc(45% - 26px); } }
@@ -698,6 +721,9 @@ nav ul li ul {
           font-size: 2rem; } }
     .feedback__form__title svg path {
       fill: var(--inversion-text-color); }
+    @media (max-width: 768px) {
+      .feedback__form__title > :nth-child(2) {
+        display: none; } }
   .feedback__form__wrapper {
     display: flex;
     margin: auto;
@@ -803,6 +829,8 @@ nav ul li ul {
           display: block; }
           .analysis__info > div:nth-child(3) img {
             float: right; } }
+    .analysis__info > div:nth-child(4) img {
+      border-radius: 3.4375rem; }
     @media (max-width: 768px) {
       .analysis__info > div:nth-child(1) {
         display: block; }
@@ -939,8 +967,12 @@ nav ul li ul {
 
 .accounting {
   position: relative;
-  padding: 6.25rem 0;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
   background-color: var(--main-bg-color); }
+  @media (max-width: 1024px) {
+    .accounting {
+      padding-top: 3.125rem; } }
   .accounting__decor {
     position: absolute; }
     @media (max-width: 1024px) {
@@ -1006,11 +1038,8 @@ nav ul li ul {
   .accounting__title {
     z-index: 2;
     position: relative;
-    padding-bottom: 6.25rem;
+    padding-bottom: 3.125rem;
     text-align: center; }
-    @media (max-width: 1024px) {
-      .accounting__title {
-        padding-bottom: 3.125rem; } }
   .accounting__links {
     z-index: 2;
     position: relative;
@@ -1181,8 +1210,7 @@ nav ul li ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
-    padding-bottom: 3.125rem; }
+    gap: 1.875rem; }
     .suppliers__info > :nth-child(3) {
       flex-direction: row-reverse; }
       @media (max-width: 768px) {
@@ -1235,7 +1263,7 @@ nav ul li ul {
 
 .aggregator {
   position: relative;
-  padding: 6.25rem 0;
+  padding: 6.25rem 0 3.125rem;
   background-color: var(--main-bg-color); }
   .aggregator__decor {
     position: absolute; }

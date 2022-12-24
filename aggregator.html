@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -92,8 +93,12 @@
           </div>
           <div class="aggregator__info">
             <div class="aggregator__info__item">
-              <img src="./images/aggregator-1.jpg" alt="aggregators logo" />
-              <p>
+              <img
+                class="wow fadeInLeft"
+                src="./images/aggregator-1.jpg"
+                alt="aggregators logo"
+              />
+              <p class="wow fadeInRight">
                 <span>Доставка</span> — уже обязательный инструмент
                 для увеличения прибыли заведения и узнаваемости бренда.
                 Зачастую, у бизнеса нет штатного сотрудника, который бы развивал
@@ -105,8 +110,12 @@
               чтобы они приносили больше прибыли
             </h6>
             <div class="aggregator__info__item">
-              <img src="./images/aggregator-2.png" alt="" />
-              <p>
+              <img
+                class="wow fadeInRight"
+                src="./images/aggregator-2.png"
+                alt=""
+              />
+              <p class="wow fadeInLeft">
                 — Актуализируем и своевременно обновляем меню <br />
                 — Просчитываем и внедряем специальные предложения для доставки
                 <br />
@@ -117,7 +126,7 @@
               </p>
             </div>
           </div>
-          <div class="aggregator__links">
+          <div class="aggregator__links wow fadeInUpBig">
             <a href="./images/aggregator-offer.png">Предложения по акциям</a>
             <a href="./images/aggregator-sales.png"
               >Статистика по акции "Блюдо в подарок"</a
@@ -128,6 +137,7 @@
             <a href="./images/aggregator-report.png"
               >Статистика за отчетный период</a
             >
+            <img src="./images/aggregator-3.png" alt="yandex logo" />
           </div>
         </div>
       </section>
@@ -323,5 +333,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

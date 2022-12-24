@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <title>Easy Business</title>
   </head>
@@ -92,10 +93,10 @@
           </div>
           <div class="finance__info">
             <div class="finance__info__item">
-              <div class="finance__info__item__img">
+              <div class="finance__info__item__img wow fadeInLeft">
                 <img src="./images/finance-2.png" alt="finance logo" />
               </div>
-              <div class="finance__info__item__title">
+              <div class="finance__info__item__title wow fadeInRight">
                 <h6>
                   Стабильное планирование денежного потока имеет важное значение
                   для успешного ведения бизнеса
@@ -112,8 +113,12 @@
               заведения и учитываем нюансы бизнеса
             </p>
             <div class="finance__info__item">
-              <img src="./images/finance-3.png" alt="finance logo" />
-              <p>
+              <img
+                class="wow fadeInRight"
+                src="./images/finance-3.png"
+                alt="finance logo"
+              />
+              <p class="wow fadeInLeft">
                 Помимо планирования денежного потока, мы предоставляем услугу
                 непосредственно ведения банк-клиента. Наши клиенты согласовывают
                 календарь на определённый период, а далее просто контролируют
@@ -124,7 +129,11 @@
               Мы гарантируем надежность данных и корректность внесения всех
               реквизитов
             </h6>
-            <img src="./images/finance-1.png" alt="finance logo" />
+            <img
+              class="wow fadeInUpBig"
+              src="./images/finance-1.webp"
+              alt="finance logo"
+            />
           </div>
           <div class="finance__links">
             <a href="./images/finance_payment-schedule.png" target="_blank">
@@ -327,5 +336,9 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

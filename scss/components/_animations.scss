@@ -1,0 +1,24 @@
+@keyframes circle {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero__images__ellipse {
+  animation: circle 2s linear infinite;
+}
+
+.work__title__img {
+  animation: circle 2s linear infinite;
+}
+
+.partners__title img {
+  animation: circle 2s linear infinite;
+}
+
+.footer__logo img {
+  animation: circle 2s linear infinite;
+}

@@ -1,7 +1,12 @@
 .accounting {
   position: relative;
-  padding: $padding100 0;
+  padding-top: $padding100;
+  padding-bottom: $padding100;
   background-color: var(--main-bg-color);
+
+  @media (max-width: 1024px) {
+    padding-top: $padding50;
+  }
 
   &__decor {
     position: absolute;
@@ -99,12 +104,8 @@
   &__title {
     z-index: 2;
     position: relative;
-    padding-bottom: $padding100;
+    padding-bottom: $padding50;
     text-align: center;
-
-    @media (max-width: 1024px) {
-      padding-bottom: $padding50;
-    }
   }
 
   &__links {
