@@ -35,6 +35,9 @@ body {
 a {
   text-decoration: none; }
 
+button {
+  cursor: pointer; }
+
 h1,
 h2,
 h3,
@@ -177,6 +180,7 @@ nav ul li ul {
       flex: 1 0 100%;
       align-items: center; } }
   .feedback__form button {
+    cursor: pointer;
     background: #fefefe;
     border-radius: 0.5rem 0px 0.5rem 0.5rem;
     color: #101010;

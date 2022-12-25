@@ -17,6 +17,7 @@
     }
 
     button {
+      cursor: pointer;
       background: $colorWhite;
       border-radius: toRem(8) 0px toRem(8) toRem(8);
       color: $colorBlack;
