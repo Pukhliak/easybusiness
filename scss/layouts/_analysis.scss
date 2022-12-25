@@ -69,7 +69,7 @@
 
     & > div:nth-child(4) {
       img {
-        border-radius: toRem(55);
+        border-radius: 16%;
       }
     }
 
@@ -79,6 +79,15 @@
 
         img {
           float: left;
+        }
+      }
+
+      & > div:nth-child(4) {
+        display: block;
+
+        img {
+          float: left;
+          margin-right: toRem(10);
         }
       }
     }
