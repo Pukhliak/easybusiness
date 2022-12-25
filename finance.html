@@ -225,19 +225,10 @@
               </div>
             </div>
             <form class="feedback__form">
-              <!-- Hidden Required Fields -->
-              <input type="hidden" name="project_name" value="Easy Business" />
-              <input
-                type="hidden"
-                name="admin_email"
-                value="pukhliak@gmail.com"
-              />
-              <input type="hidden" name="form_subject" value="Form Subject" />
-              <!-- END Hidden Required Fields -->
               <div class="feedback__form__item">
                 <label for="form-name">
                   <input
-                    name="Имя"
+                    name="user_name"
                     id="form-name"
                     type="text"
                     placeholder="Имя"
@@ -247,7 +238,7 @@
               <div class="feedback__form__item">
                 <label for="form-email">
                   <input
-                    name="Почта"
+                    name="user_email"
                     id="form-email"
                     type="email"
                     placeholder="Email"
@@ -257,7 +248,7 @@
               <div class="feedback__form__item">
                 <label for="form-mobile">
                   <input
-                    name="Телефон"
+                    name="user_phone"
                     id="form-mobile"
                     type="tel"
                     placeholder="Номер телефона"
@@ -267,7 +258,7 @@
               <div class="feedback__form__item">
                 <label for="form-message">
                   <textarea
-                    name="Сообщение"
+                    name="user_message"
                     id="form-message"
                     cols="30"
                     rows="5"
@@ -356,7 +347,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
