@@ -241,6 +241,50 @@
                 </svg>
               </div>
             </div>
+            <form class="feedback__form" action="./mail.php" method="POST">
+              <div class="feedback__form__item">
+                <label for="form-name">
+                  <input
+                    name="user_name"
+                    id="form-name"
+                    type="text"
+                    placeholder="Имя"
+                  />
+                </label>
+              </div>
+              <div class="feedback__form__item">
+                <label for="form-email">
+                  <input
+                    name="user_email"
+                    id="form-email"
+                    type="email"
+                    placeholder="Email"
+                  />
+                </label>
+              </div>
+              <div class="feedback__form__item">
+                <label for="form-mobile">
+                  <input
+                    name="user_phone"
+                    id="form-mobile"
+                    type="tel"
+                    placeholder="Номер телефона"
+                  />
+                </label>
+              </div>
+              <div class="feedback__form__item">
+                <label for="form-message">
+                  <textarea
+                    name="user_message"
+                    id="form-message"
+                    cols="30"
+                    rows="5"
+                    placeholder="Сообщение"
+                  ></textarea>
+                </label>
+              </div>
+              <button type="submit">отправить</button>
+            </form>
           </div>
         </div>
       </section>
