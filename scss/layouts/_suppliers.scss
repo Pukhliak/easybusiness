@@ -61,6 +61,7 @@
       @media (max-width: 768px) {
         img {
           float: right;
+          margin-right: 0;
         }
       }
     }
@@ -75,6 +76,7 @@
 
         img {
           float: left;
+          margin-right: toRem(10);
         }
       }
 

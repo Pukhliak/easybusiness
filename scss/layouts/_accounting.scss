@@ -64,6 +64,14 @@
 
     & > :nth-child(6) {
       flex-direction: row-reverse;
+
+      @media (max-width: 768px) {
+        display: block;
+
+        img {
+          float: right;
+        }
+      }
     }
 
     a {
@@ -97,6 +105,14 @@
       img {
         max-width: 50%;
         height: auto;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+
+        img {
+          float: left;
+        }
       }
     }
   }
