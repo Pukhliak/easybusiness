@@ -71,29 +71,6 @@ nav ul li ul {
           }
         }
       }
-
-      & :nth-child(2):hover {
-        svg {
-          transform: translateY(5px) rotate(90deg);
-        }
-        ul {
-          flex-direction: column;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          display: block;
-          padding: 0 toRem(8);
-          background: var(--inversion-bg-color);
-          transition: transform 0.3s ease;
-          transform: translate(0%, 9%);
-          width: max-content;
-          z-index: 5;
-
-          @media (max-width: 768px) {
-            transform: translate(32%, 9%);
-          }
-        }
-      }
     }
 
     &__drop-down {
