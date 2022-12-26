@@ -926,6 +926,9 @@ nav ul li ul {
   background-color: var(--main-bg-color); }
   .finance__decor {
     position: absolute; }
+    @media (max-width: 1024px) {
+      .finance__decor {
+        display: none; } }
   @media (max-width: 1024px) {
     .finance {
       padding: 3.125rem 0; } }
