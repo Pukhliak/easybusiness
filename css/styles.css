@@ -556,50 +556,21 @@ nav ul li ul {
     justify-content: center;
     gap: 2.25rem;
     margin-bottom: 3.125rem; }
-    .work__items__wrapper {
-      display: flex;
-      max-width: calc(33% - 26px);
-      position: relative;
-      box-sizing: border-box;
-      background: var(--inversion-bg-color);
-      background-clip: padding-box;
-      border: solid 5px transparent;
-      border-radius: 1.25rem; }
-      .work__items__wrapper:hover::before {
-        margin: -0.9375rem;
-        animation: bgCircle 3s infinite;
-        animation-timing-function: ease; }
-      .work__items__wrapper:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        margin: -0.3125rem;
-        border-radius: inherit;
-        background: linear-gradient(to right, #ff7c7c, #78a5fd, #7cf7ff); }
-
-@keyframes bgCircle {
-  0% {
-    background: #ff7c7c; }
-  33% {
-    background: #78a5fd; }
-  66% {
-    background: #7cf7ff; }
-  100% {
-    background: #ff7c7c; } }
     .work__items__card {
       display: flex;
       flex-direction: column;
+      max-width: calc(33% - 26px);
       position: relative;
       background: var(--main-bg-color);
       padding: 0.625rem 1.25rem;
       z-index: 2;
-      border-radius: 1.25rem; }
+      border-radius: 1.25rem;
+      border-image: url("../images/gradient-border.svg") 75 fill/36px/1px stretch; }
       .work__items__card:hover {
-        transform: scale(1.05); }
+        transform: scale(1.05);
+        border-image: none;
+        border: 8px solid #ff7c7c;
+        animation: bgCircle 3s infinite; }
       @media (max-width: 1024px) {
         .work__items__card {
           max-width: calc(45% - 26px); } }
@@ -628,6 +599,16 @@ nav ul li ul {
         right: 0;
         bottom: 0;
         transform: translate(15%, 15%); }
+
+@keyframes bgCircle {
+  0% {
+    border: 8px solid #ff7c7c; }
+  33% {
+    border: 8px solid #78a5fd; }
+  66% {
+    border: 8px solid #7cf7ff; }
+  100% {
+    border: 8px solid #ff7c7c; } }
   .work__bottomLine img {
     width: 100%; }
 
