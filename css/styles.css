@@ -565,11 +565,12 @@ nav ul li ul {
       padding: 0.625rem 1.25rem;
       z-index: 2;
       border-radius: 1.25rem;
-      border-image: url("../images/gradient-border.svg") 75 fill/36px/1px stretch; }
+      border-image: url("../images/gradient-border.svg") 75 fill/36px/1px stretch;
+      transition: all 0.3s ease; }
       .work__items__card:hover {
         transform: scale(1.05);
         border-image: none;
-        border: 8px solid #ff7c7c;
+        border: 6px solid #ff7c7c;
         animation: bgCircle 3s infinite; }
       @media (max-width: 1024px) {
         .work__items__card {
@@ -602,13 +603,13 @@ nav ul li ul {
 
 @keyframes bgCircle {
   0% {
-    border: 8px solid #ff7c7c; }
+    border-color: #ff7c7c; }
   33% {
-    border: 8px solid #78a5fd; }
+    border-color: #78a5fd; }
   66% {
-    border: 8px solid #7cf7ff; }
+    border-color: #7cf7ff; }
   100% {
-    border: 8px solid #ff7c7c; } }
+    border-color: #ff7c7c; } }
   .work__bottomLine img {
     width: 100%; }
 

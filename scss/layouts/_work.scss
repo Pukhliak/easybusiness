@@ -58,11 +58,12 @@
       border-radius: toRem(20);
       border-image: url("../images/gradient-border.svg") 75 fill/36px/1px
         stretch;
+      transition: all 0.3s ease;
 
       &:hover {
         transform: scale(1.05);
         border-image: none;
-        border: 8px solid #ff7c7c;
+        border: 6px solid #ff7c7c;
         animation: bgCircle 3s infinite;
       }
 
@@ -111,19 +112,19 @@
 
       @keyframes bgCircle {
         0% {
-          border: 8px solid #ff7c7c;
+          border-color: #ff7c7c;
         }
 
         33% {
-          border: 8px solid #78a5fd;
+          border-color: #78a5fd;
         }
 
         66% {
-          border: 8px solid #7cf7ff;
+          border-color: #7cf7ff;
         }
 
         100% {
-          border: 8px solid #ff7c7c;
+          border-color: #ff7c7c;
         }
       }
     }
